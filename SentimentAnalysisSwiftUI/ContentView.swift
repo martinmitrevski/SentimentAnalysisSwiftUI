@@ -22,8 +22,7 @@ struct ContentView : View {
         VStack {
             image(for: sentiment)
                 .animation(.default)
-            TextField($text,
-                      placeholder: Text("Write something..."))
+            TextField("Write something...", text: $text)
                 .padding(.all)
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
